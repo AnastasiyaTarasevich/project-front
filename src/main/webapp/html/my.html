@@ -7,5 +7,67 @@
 <body>
 <h1>RPG admin panel</h1>
 
+<h2>Accounts list:</h2>
+<label for="pages-count">Count per page</label>
+<select id="pages-count">
+
+</select>
+<table id="myTable">
+    <thead>
+    <tr><th>#</th><th>Name</th><th>Title</th><th>Race</th><th>Profession</th><th>Level</th><th>Birthday</th><th>Banned</th><th>Edit</th><th>Delete</th></tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<div id="pages">
+    Pages:
+</div>
+<div id="create-account">
+    <h2>Create New Account</h2>
+    <form id="create-account-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="12" required><br>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" maxlength="30" required><br>
+
+        <label for="race">Race:</label>
+        <select id="race" name="race" required>
+            <option value="HUMAN">Human</option>
+            <option value="DWARF">Dwarf</option>
+            <option value="ELF">Elf</option>
+            <option value="GIANT">Giant</option>
+            <option value="ORC">Orc</option>
+            <option value="TROLL">Troll</option>
+            <option value="HOBBIT">Hobbit</option>
+        </select><br>
+
+        <label for="profession">Profession:</label>
+        <select id="profession" name="profession" required>
+            <option value="WARRIOR">Warrior</option>
+            <option value="ROGUE">Rogue</option>
+            <option value="SORCERER">Sorcerer</option>
+            <option value="CLERIC">Cleric</option>
+            <option value="PALADIN">Paladin</option>
+            <option value="NAZGUL">Nazgul</option>
+            <option value="WARLOCK">Warlock</option>
+            <option value="DRUID">Druid</option>
+        </select><br>
+
+        <label for="level">Level:</label>
+        <input type="number" id="level" name="level" min="0" max="100" required><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required><br>
+
+        <label for="banned">Banned:</label>
+        <select id="banned" name="banned" required>
+            <option value="false">false</option>
+            <option value="true">true</option>
+        </select>
+<br>
+        <button type="submit" id="saveButton"><img src="img/save.png"></button>
+    </form>
+</div>
 </body>
 </html>
+<script src="\js\my.js" defer></script>

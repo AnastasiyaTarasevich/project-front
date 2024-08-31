@@ -1,0 +1,11 @@
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+.current-page
+{
+    background-color: red;
+    color: white;
+    border: 1px solid darkred;
+}
